@@ -195,7 +195,7 @@ app.post('/api/enviar-codigo', async (req, res) => {
       `
     });
 
-    res.json({ mensaje: '✅ Código enviado a tu correo' });
+    res.json({ ok: true, mensaje: '✅ Código enviado a tu correo' });
   } catch (error) {
     console.error('❌ ERROR ENVIAR CÓDIGO:', error);
     res.json({ mensaje: '❌ No se pudo enviar el código: ' + error.message });
@@ -271,7 +271,7 @@ app.post('/api/cambiar-contrasena', async (req, res) => {
 
     delete codigosRecuperacion[correo];
     console.log('✅ ✅ CONTRASEÑA ACTUALIZADA EN FIREBASE ✅ ✅');
-    res.json({ mensaje: '✅ Contraseña actualizada. Ya puedes iniciar sesión' });
+    res.json({ ok: true, mensaje: '✅ Contraseña actualizada. Ya puedes iniciar sesión' });
   } catch (error) {
     console.error('❌ ❌ ERROR AL CAMBIAR CONTRASEÑA:', error);
     res.json({ mensaje: '❌ Error: ' + error.message });
