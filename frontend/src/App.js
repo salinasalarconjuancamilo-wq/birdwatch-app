@@ -140,19 +140,19 @@ function App() {
           }
         });
 
-        fetch('http://localhost:5001/api/listar-usuarios')
+        fetch('http://localhost:5001/api/listar-usuarios', { cache: 'no-store' })
           .then(res => res.json())
           .then(datos => { if (datos.ok) setListaUsuarios(datos.usuarios); });
 
-        fetch('http://localhost:5001/api/parques/listar')
+        fetch('http://localhost:5001/api/parques/listar', { cache: 'no-store' })
           .then(res => res.json())
           .then(datos => { if (datos.ok) setListaParques(datos.parques); });
 
-        fetch('http://localhost:5001/api/avistamientos/listar')
+        fetch('http://localhost:5001/api/avistamientos/listar', { cache: 'no-store' })
           .then(res => res.json())
           .then(datos => { if (datos.ok) setListaAvistamientos(datos.avistamientos); });
 
-        fetch('http://localhost:5001/api/foro/listar')
+        fetch('http://localhost:5001/api/foro/listar', { cache: 'no-store' })
           .then(res => res.json())
           .then(datos => { if (datos.ok) setListaPublicaciones(datos.publicaciones); });
 
@@ -238,7 +238,7 @@ function App() {
   const badgeClass = rolUsuario === 'Administrador' ? 'badge-admin' : rolUsuario === 'Administrador de Parque' ? 'badge-parque' : 'badge-visitante';
 
   const cargarParques = () => {
-    fetch('http://localhost:5001/api/parques/listar')
+    fetch('http://localhost:5001/api/parques/listar', { cache: 'no-store' })
       .then(res => res.json())
       .then(datos => { if (datos.ok) setListaParques(datos.parques); });
   };
@@ -334,7 +334,7 @@ function App() {
   };
 
   const cargarAvistamientos = () => {
-    fetch('http://localhost:5001/api/avistamientos/listar')
+    fetch('http://localhost:5001/api/avistamientos/listar', { cache: 'no-store' })
       .then(res => res.json())
       .then(datos => { if (datos.ok) setListaAvistamientos(datos.avistamientos); });
   };
@@ -463,7 +463,7 @@ function App() {
   };
 
   const cargarPublicaciones = () => {
-    fetch('http://localhost:5001/api/foro/listar')
+    fetch('http://localhost:5001/api/foro/listar', { cache: 'no-store' })
       .then(res => res.json())
       .then(datos => { if (datos.ok) setListaPublicaciones(datos.publicaciones); });
   };

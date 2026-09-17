@@ -205,15 +205,15 @@
 
 /* ===== COOKIES ===== */
 .cookies {
-  background-color: rgba(232, 245, 233, 0.98);
+  background-color: rgba(253, 246, 227, 0.98);
   padding: 22px 28px;
   border-radius: 14px;
-  border: 2px solid #28C76F;
+  border: 2px solid #B8860B;
   display: flex;
   align-items: center;
   gap: 18px;
   flex-wrap: wrap;
-  box-shadow: 0 6px 20px rgba(15, 110, 60, 0.25);
+  box-shadow: 0 6px 20px rgba(123, 78, 20, 0.25);
   margin-top: 30px;
   position: relative;
   z-index: 1;
@@ -226,14 +226,14 @@
 
 .cookies-titulo {
   margin: 0 0 6px 0;
-  color: #0F6E3C;
+  color: #7A4A1E;
   font-size: 20px;
   font-weight: 700;
 }
 
 .cookies-texto {
   margin: 0;
-  color: #1a5c36;
+  color: #5D4037;
   font-size: 16px;
   line-height: 1.6;
 }
@@ -247,19 +247,19 @@
 }
 
 .cookies-botones .boton-rojo {
-  background-color: #6c9e7f;
+  background-color: #A1887F;
 }
 
 .cookies-botones .boton-rojo:hover {
-  background-color: #5b8a6d;
+  background-color: #8D6E63;
 }
 
 .cookies-botones .boton-verde {
-  background-color: #0F6E3C;
+  background-color: #B8860B;
 }
 
 .cookies-botones .boton-verde:hover {
-  background-color: #0c5a30;
+  background-color: #9C7508;
 }
 
 /* ===== TERMINOS Y CONDICIONES ===== */
