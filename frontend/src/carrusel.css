@@ -24,13 +24,20 @@
 
 .carrusel-flecha {
   position: absolute;
-  top: 50%;
+  top: 38%;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.55);
   color: white;
   border: none;
-  font-size: 28px;
-  padding: 10px 16px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   border-radius: 50%;
   transition: all 0.3s ease;
@@ -38,12 +45,12 @@
 }
 
 .carrusel-flecha:hover {
-  background-color: #2ecc71; /* El verde de tu botón */
-  transform: translateY(-50%) scale(1.1);
+  background-color: #2ecc71;
+  transform: translateY(-50%) scale(1.05);
 }
 
-.carrusel-flecha.izquierda { left: 20px; }
-.carrusel-flecha.derecha { right: 20px; }
+.carrusel-flecha.izquierda { left: 14px; }
+.carrusel-flecha.derecha { right: 14px; }
 
 .carrusel-indicadores {
   position: absolute;

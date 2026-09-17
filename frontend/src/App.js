@@ -42,6 +42,56 @@ function App() {
       imagen: "https://upload.wikimedia.org/wikipedia/commons/2/23/Bubo_virginianus_06.jpg",
       nombre: "Búho Campestre",
       descripcion: "Habitante nocturno de los bosques protectores de San Antonio"
+    },
+    {
+      imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Blue-grey_tanager_%28Thraupis_episcopus_quaesita%29_Las_Tangaras.jpg/960px-Blue-grey_tanager_%28Thraupis_episcopus_quaesita%29_Las_Tangaras.jpg",
+      nombre: "Azulejo Común",
+      descripcion: "Especie habitual en los bordes de bosque y jardines de San Antonio"
+    },
+    {
+      imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Palm_tanager_%28Thraupis_palmarum_melanoptera%29_Cundinamarca.jpg/960px-Palm_tanager_%28Thraupis_palmarum_melanoptera%29_Cundinamarca.jpg",
+      nombre: "Azulejo Palmero",
+      descripcion: "Se observa con facilidad en las zonas abiertas y palmares de la región"
+    },
+    {
+      imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Tangara_nigroviridis_T%C3%A1ngara_berlina_Beryl-spangled_Tanager_%286491814425%29.jpg/960px-Tangara_nigroviridis_T%C3%A1ngara_berlina_Beryl-spangled_Tanager_%286491814425%29.jpg",
+      nombre: "Tángara Berlina",
+      descripcion: "Tángara del bosque nuboso, típica de los Andes colombianos"
+    },
+    {
+      imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Great_thrush_%28Turdus_fuscater_quindio%29_male_Caldas.jpg/960px-Great_thrush_%28Turdus_fuscater_quindio%29_male_Caldas.jpg",
+      nombre: "Mirla Negra",
+      descripcion: "Ave de gran tamaño, común en los bosques andinos de San Antonio"
+    },
+    {
+      imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Rufous_collared_sparrow_%28Zonotrichia_capensis_costaricensis%29_Cundinamarca.jpg/960px-Rufous_collared_sparrow_%28Zonotrichia_capensis_costaricensis%29_Cundinamarca.jpg",
+      nombre: "Copetón",
+      descripcion: "Ave muy común en los pueblos y fincas de San Antonio del Tequendama"
+    },
+    {
+      imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Long-tailed_sylph_%28Aglaiocercus_kingii_kingii%29_male_Cundinamarca_2.jpg/960px-Long-tailed_sylph_%28Aglaiocercus_kingii_kingii%29_male_Cundinamarca_2.jpg",
+      nombre: "Silfo Colilargo",
+      descripcion: "Colibrí de larga cola verde metálico, joya del bosque de niebla"
+    },
+    {
+      imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/White-booted_racket-tail_%28Ocreatus_underwoodii_melanantherus%29_male_in_flight_Paz_de_las_Aves_2.jpg/960px-White-booted_racket-tail_%28Ocreatus_underwoodii_melanantherus%29_male_in_flight_Paz_de_las_Aves_2.jpg",
+      nombre: "Colibrí Coliblanco",
+      descripcion: "Pequeño colibrí con plumitas blancas en las patas, del bosque andino"
+    },
+    {
+      imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Scrub_tanager_%28Stilpnia_vitriolina%29_Las_Tangaras.jpg/960px-Scrub_tanager_%28Stilpnia_vitriolina%29_Las_Tangaras.jpg",
+      nombre: "Tángara Rastrojera",
+      descripcion: "Endémica de la zona andina, recorre matorrales en busca de frutos"
+    },
+    {
+      imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Bananaquits.jpg/960px-Bananaquits.jpg",
+      nombre: "Mielero",
+      descripcion: "Pequeña ave nectarívora, frecuente en los jardines floridos de la región"
+    },
+    {
+      imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Tangara_cyanicollis_T%C3%A1ngara_real_Blue-necked_Tanager_%286730353263%29.jpg/960px-Tangara_cyanicollis_T%C3%A1ngara_real_Blue-necked_Tanager_%286730353263%29.jpg",
+      nombre: "Tángara Real",
+      descripcion: "Tángara de colores vibrantes que habita el dosel del bosque nuboso"
     }
   ];
 
