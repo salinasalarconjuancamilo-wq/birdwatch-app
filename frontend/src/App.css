@@ -183,21 +183,88 @@
 
 /* ===== COOKIES ===== */
 .cookies {
-  background-color: #FFF9E6;
-  padding: 20px 30px;
-  border-radius: 12px;
-  border: 1px solid #FFE58F;
+  background-color: rgba(255, 249, 230, 0.98);
+  padding: 22px 28px;
+  border-radius: 14px;
+  border: 2px solid #FFE58F;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 18px;
   flex-wrap: wrap;
-  gap: 15px;
+  box-shadow: 0 6px 20px rgba(255, 193, 7, 0.25);
+  margin-top: 30px;
+  position: relative;
+  z-index: 1;
 }
 
-.cookies p {
+.cookies-icono {
+  font-size: 42px;
+  flex-shrink: 0;
+}
+
+.cookies-contenido {
+  flex: 1;
+  min-width: 260px;
+}
+
+.cookies-titulo {
+  margin: 0 0 6px 0;
+  color: #856404;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.cookies-texto {
   margin: 0;
   color: #856404;
-  font-size: 18px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.cookies-botones {
+  display: flex;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.cookies-botones .boton-rojo {
+  background-color: #dc3545;
+}
+
+.cookies-botones .boton-rojo:hover {
+  background-color: #c82333;
+}
+
+/* ===== TERMINOS Y CONDICIONES ===== */
+.terminos-contenedor {
+  max-width: 900px;
+}
+
+.terminos-contenedor .tarjeta {
+  text-align: left;
+  margin-bottom: 20px;
+  padding: 22px 26px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(15, 110, 60, 0.12);
+}
+
+.terminos-contenedor .tarjeta h3 {
+  font-size: 20px;
+  color: #0F6E3C;
+  margin-bottom: 8px;
+}
+
+.terminos-contenedor .tarjeta p {
+  font-size: 16px;
+  color: #444444;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.terminos-boton {
+  text-align: center;
+  margin-top: 25px;
 }
 
 /* ===== FORMULARIOS ===== */

@@ -112,7 +112,7 @@ function App() {
 
   useEffect(() => {
     const aceptadas = localStorage.getItem('cookiesAceptadas');
-    if (aceptadas === 'SI') setCookiesAceptadas(true);
+    if (aceptadas === 'SI' || aceptadas === 'NO') setCookiesAceptadas(true);
 
     if (pagina === 'dashboard') {
       const correoGuardado = localStorage.getItem('correoUsuario');
@@ -166,6 +166,11 @@ function App() {
 
   const aceptarCookies = () => {
     localStorage.setItem('cookiesAceptadas', 'SI');
+    setCookiesAceptadas(true);
+  };
+
+  const rechazarCookies = () => {
+    localStorage.setItem('cookiesAceptadas', 'NO');
     setCookiesAceptadas(true);
   };
 
@@ -553,10 +558,115 @@ function App() {
             </div>
             {!cookiesAceptadas && (
               <div className="cookies">
-                <p>Al continuar navegando, aceptas el uso de cookies para mejorar tu experiencia.</p>
-                <button className="boton boton-verde" onClick={aceptarCookies}>ACEPTO</button>
+                <div className="cookies-icono">🍪</div>
+                <div className="cookies-contenido">
+                  <h4 className="cookies-titulo">Usamos cookies</h4>
+                  <p className="cookies-texto">
+                    Utilizamos cookies para mejorar tu experiencia en BIRDWATCH.
+                    Puedes aceptarlas todas, rechazarlas o conocer más en nuestros
+                    <button className="enlace" onClick={() => setPagina('terminos')}> Términos y Condiciones</button>.
+                  </p>
+                </div>
+                <div className="cookies-botones">
+                  <button className="boton boton-rojo" onClick={rechazarCookies}>Rechazar</button>
+                  <button className="boton boton-verde" onClick={aceptarCookies}>Aceptar</button>
+                </div>
               </div>
             )}
+          </main>
+          <footer className="pie">contacto@birdwatch.com | Instagram: @birdwatch_sat | 2026 BIRDWATCH</footer>
+        </>
+      )}
+
+      {/* ==================== TERMINOS Y CONDICIONES ==================== */}
+      {pagina === 'terminos' && (
+        <>
+          <header className="cabecera">
+            <Logo />
+            <div className="cabecera-botones">
+              <button className="boton boton-blanco" onClick={() => setPagina('inicio')}>Volver al inicio</button>
+            </div>
+          </header>
+          <main className="contenido terminos-contenedor">
+            <h1 className="titulo-formulario">📜 Terminos y Condiciones</h1>
+
+            <div className="tarjeta">
+              <h3>1. Aceptacion de los Terminos</h3>
+              <p>
+                Al acceder y utilizar la plataforma BIRDWATCH, aceptas cumplir con los presentes Terminos y Condiciones.
+                Si no estas de acuerdo con ellos, te pedimos que no utilices la aplicacion.
+              </p>
+            </div>
+
+            <div className="tarjeta">
+              <h3>2. Uso de la Plataforma</h3>
+              <p>
+                BIRDWATCH es una aplicacion hibrida educativa sobre aves del Zoologico Santa Cruz y ecoparques aliados.
+                El uso de la plataforma debe ser exclusivamente con fines educativos e informativos, sin fines comerciales
+                no autorizados.
+              </p>
+            </div>
+
+            <div className="tarjeta">
+              <h3>3. Cuenta del Usuario</h3>
+              <p>
+                Eres responsable de la confidencialidad de tus credenciales de acceso y de todas las actividades que se
+                realicen con tu cuenta. Debes proporcionar datos veraces al momento de registrarte y mantenerlos actualizados.
+              </p>
+            </div>
+
+            <div className="tarjeta">
+              <h3>4. Contenido y Publicaciones</h3>
+              <p>
+                Los avistamientos, publicaciones del foro y demas contenidos que compartas deben ser respetuosos y adecuados.
+                Queda prohibido publicar contenido ofensivo, falso o que infrinja derechos de terceros.
+              </p>
+            </div>
+
+            <div className="tarjeta">
+              <h3>5. Privacidad y Cookies</h3>
+              <p>
+                Respetamos tu privacidad. Esta plataforma utiliza cookies para mejorar la experiencia de navegacion.
+                Puedes aceptarlas o rechazarlas desde el aviso de cookies. Al aceptar, consientes el uso de cookies para
+                recordar tus preferencias.
+              </p>
+            </div>
+
+            <div className="tarjeta">
+              <h3>6. Propiedad Intelectual</h3>
+              <p>
+                El nombre BIRDWATCH, su logotipo, imagenes y contenidos son propiedad de sus creadores. No esta permitida
+                su reproduccion total o parcial sin autorizacion previa.
+              </p>
+            </div>
+
+            <div className="tarjeta">
+              <h3>7. Limitacion de Responsabilidad</h3>
+              <p>
+                BIRDWATCH no se hace responsable por el uso indebido de la informacion publicada ni por interrupciones
+                temporales del servicio. La informacion sobre aves tiene fines educativos y puede estar sujeta a cambios.
+              </p>
+            </div>
+
+            <div className="tarjeta">
+              <h3>8. Modificaciones</h3>
+              <p>
+                Nos reservamos el derecho de modificar estos Terminos y Condiciones en cualquier momento. Los cambios
+                entraran en vigencia desde su publicacion en la plataforma.
+              </p>
+            </div>
+
+            <div className="tarjeta">
+              <h3>9. Contacto</h3>
+              <p>
+                Para consultas o solicitudes relacionadas con estos Terminos y Condiciones, escribenos a:
+                <strong> contacto@birdwatch.com</strong>
+              </p>
+            </div>
+
+            <div className="terminos-boton">
+              <button className="boton boton-verde" onClick={() => { setPagina('inicio'); setMensaje(''); }}>Aceptar y volver al inicio</button>
+            </div>
           </main>
           <footer className="pie">contacto@birdwatch.com | Instagram: @birdwatch_sat | 2026 BIRDWATCH</footer>
         </>
