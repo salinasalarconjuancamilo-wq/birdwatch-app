@@ -558,7 +558,6 @@ function App() {
             </div>
             {!cookiesAceptadas && (
               <div className="cookies">
-                <div className="cookies-icono">🍪</div>
                 <div className="cookies-contenido">
                   <h4 className="cookies-titulo">Usamos cookies</h4>
                   <p className="cookies-texto">
@@ -588,7 +587,7 @@ function App() {
             </div>
           </header>
           <main className="contenido terminos-contenedor">
-            <h1 className="titulo-formulario">📜 Terminos y Condiciones</h1>
+            <h1 className="titulo-formulario">Terminos y Condiciones</h1>
 
             <div className="tarjeta">
               <h3>1. Aceptacion de los Terminos</h3>

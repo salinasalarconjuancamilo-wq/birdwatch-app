@@ -197,11 +197,6 @@
   z-index: 1;
 }
 
-.cookies-icono {
-  font-size: 42px;
-  flex-shrink: 0;
-}
-
 .cookies-contenido {
   flex: 1;
   min-width: 260px;
