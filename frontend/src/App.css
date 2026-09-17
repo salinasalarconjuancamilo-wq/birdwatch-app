@@ -57,7 +57,7 @@
 }
 
 .cabecera-logo-texto {
-  font-size: 26px;
+  font-size: 28px;
   font-weight: 700;
   color: #ffffff;
   letter-spacing: 1px;
@@ -74,7 +74,7 @@
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   transition: all 0.3s ease;
 }
@@ -118,7 +118,7 @@
 .boton-ancho {
   width: 100%;
   padding: 13px;
-  font-size: 16px;
+  font-size: 18px;
   margin-top: 10px;
 }
 
@@ -135,14 +135,14 @@
 .titulo-principal {
   text-align: center;
   color: #ffffff;
-  font-size: 36px;
+  font-size: 40px;
   margin-bottom: 40px;
   font-weight: 700;
 }
 
 .subtitulo {
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
   color: #ffffff;
   margin-bottom: 40px;
 }
@@ -171,14 +171,14 @@
 
 .tarjeta h3 {
   color: #0F6E3C;
-  font-size: 22px;
+  font-size: 24px;
   margin-bottom: 12px;
 }
 
 .tarjeta p {
   color: #444444;
   line-height: 1.6;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 /* ===== COOKIES ===== */
@@ -197,7 +197,7 @@
 .cookies p {
   margin: 0;
   color: #856404;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 /* ===== FORMULARIOS ===== */
@@ -220,7 +220,7 @@
   text-align: center;
   color: #0F6E3C;
   margin-bottom: 30px;
-  font-size: 26px;
+  font-size: 28px;
 }
 
 label {
@@ -228,7 +228,7 @@ label {
   color: #333333;
   display: block;
   margin-bottom: 8px;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .input {
@@ -237,7 +237,7 @@ label {
   margin-bottom: 15px;
   border: 2px solid #e0e0e0;
   border-radius: 8px;
-  font-size: 16px;
+  font-size: 18px;
   transition: border-color 0.3s ease;
 }
 
@@ -272,7 +272,7 @@ label {
   border-radius: 10px;
   padding: 15px;
   margin-bottom: 20px;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .texto-ayuda strong {
@@ -289,7 +289,7 @@ label {
 .mensaje {
   text-align: center;
   margin-top: 20px;
-  font-size: 16px;
+  font-size: 18px;
   white-space: pre-line;
   color: #333333;
   background-color: rgba(255, 255, 255, 0.92);
@@ -312,7 +312,7 @@ label {
   border: none;
   background: transparent;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 18px;
   text-decoration: underline;
 }
 
@@ -346,7 +346,7 @@ label {
 }
 
 .modulo-card p {
-  font-size: 15px;
+  font-size: 17px;
   color: #666;
   margin-bottom: 15px;
   min-height: 35px;
@@ -370,7 +370,7 @@ label {
 }
 
 .tabla-placeholder p:first-child {
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 600;
   color: #0F6E3C;
   margin-bottom: 10px;
@@ -380,7 +380,7 @@ label {
 .tabla-usuarios {
   width: 100%;
   border-collapse: collapse;
-  font-size: 15px;
+  font-size: 17px;
 }
 
 .tabla-usuarios thead {
@@ -392,7 +392,7 @@ label {
   padding: 12px 15px;
   text-align: left;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 15px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
@@ -429,7 +429,7 @@ label {
 .titulo-seccion {
   text-align: center;
   color: #ffffff;
-  font-size: 24px;
+  font-size: 26px;
   margin-bottom: 20px;
   font-weight: 600;
 }
@@ -455,15 +455,15 @@ label {
 }
 
 .usuario-avatar {
-  width: 42px;
-  height: 42px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   background-color: #0F6E3C;
   color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 17px;
+  font-size: 19px;
   font-weight: 700;
   flex-shrink: 0;
 }
@@ -476,7 +476,7 @@ label {
 }
 
 .usuario-nombre {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   color: #333;
   overflow-wrap: break-word;
@@ -497,13 +497,13 @@ label {
 
 .parque-info-banner h2 {
   color: #0F6E3C;
-  font-size: 24px;
+  font-size: 26px;
   margin-bottom: 10px;
 }
 
 .parque-info-banner p {
   color: #555;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.6;
   margin-bottom: 15px;
 }
@@ -512,7 +512,7 @@ label {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  font-size: 15px;
+  font-size: 17px;
   color: #666;
 }
 
@@ -523,7 +523,7 @@ label {
 }
 
 .usuario-email {
-  font-size: 14px;
+  font-size: 16px;
   color: #888;
   overflow-wrap: break-word;
   word-break: break-word;
@@ -549,7 +549,7 @@ label {
   text-align: center;
   padding: 20px;
   margin-top: auto;
-  font-size: 15px;
+  font-size: 17px;
   position: relative;
   z-index: 1;
 }
@@ -607,7 +607,7 @@ label {
   background: transparent;
   border: none;
   text-align: left;
-  font-size: 16px;
+  font-size: 18px;
   color: #333;
   cursor: pointer;
   transition: background-color 0.2s ease;

@@ -82,13 +82,13 @@
 }
 
 .carrusel-nombre {
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 700;
   margin: 0 0 5px 0;
 }
 
 .carrusel-descripcion {
-  font-size: 16px;
+  font-size: 18px;
   margin: 0;
   opacity: 0.9;
 }
@@ -96,7 +96,7 @@
 .subtitulo-carrusel {
   text-align: center;
   color: #ffffff;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 500;
   margin-bottom: 5px;
 }
