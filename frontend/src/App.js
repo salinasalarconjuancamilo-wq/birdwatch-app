@@ -3,7 +3,12 @@ import './App.css';
 import Carrusel from './Carrusel';
 
 function App() {
-  const [pagina, setPagina] = useState('inicio');
+  const [pagina, setPagina] = useState(() => {
+    try {
+      if (localStorage.getItem('correoUsuario') && localStorage.getItem('rolUsuario')) return 'dashboard';
+    } catch (e) { /* sin almacenamiento */ }
+    return 'inicio';
+  });
   const [subPagina, setSubPagina] = useState('');
   const [mensaje, setMensaje] = useState('');
   const [usuarioNombre, setUsuarioNombre] = useState('');
@@ -165,13 +170,13 @@ function App() {
   }, [pagina]);
 
   const aceptarCookies = () => {
-    localStorage.setItem('cookiesAceptadas', 'SI');
     setCookiesAceptadas(true);
+    try { localStorage.setItem('cookiesAceptadas', 'SI'); } catch (e) { /* almacenamiento no disponible */ }
   };
 
   const rechazarCookies = () => {
-    localStorage.setItem('cookiesAceptadas', 'NO');
     setCookiesAceptadas(true);
+    try { localStorage.setItem('cookiesAceptadas', 'NO'); } catch (e) { /* almacenamiento no disponible */ }
   };
 
   const handleRegistro = async (e) => {
