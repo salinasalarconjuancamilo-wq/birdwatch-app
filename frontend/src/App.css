@@ -88,6 +88,28 @@
   background-color: #f0f0f0;
 }
 
+.boton-iniciar {
+  background-color: #264653;
+  color: #ffffff;
+  border: 1px solid transparent;
+}
+
+.boton-iniciar:hover {
+  background-color: #1d3640;
+  border-color: #ffffff;
+}
+
+.boton-registrar {
+  background-color: #e9c46a;
+  color: #264653;
+  border: 1px solid transparent;
+}
+
+.boton-registrar:hover {
+  background-color: #ddb552;
+  border-color: #ffffff;
+}
+
 .boton-verde {
   background-color: #28C76F;
   color: #ffffff;

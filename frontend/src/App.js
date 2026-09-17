@@ -540,8 +540,8 @@ function App() {
           <header className="cabecera">
             <Logo />
             <div className="cabecera-botones">
-              <button className="boton boton-blanco" onClick={() => setPagina('login')}>🔑 Iniciar Sesion</button>
-              <button className="boton boton-verde" onClick={() => {setPagina('registro'); setMensaje('');}}>📝 Registrarse</button>
+              <button className="boton boton-iniciar" onClick={() => setPagina('login')}>Iniciar Sesion</button>
+              <button className="boton boton-registrar" onClick={() => {setPagina('registro'); setMensaje('');}}>Registrarse</button>
             </div>
           </header>
           <main className="contenido">
