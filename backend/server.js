@@ -130,7 +130,7 @@ app.post('/api/login', async (req, res) => {
       await updateDoc(doc(db, 'usuarios', usuarioDoc.id), { rol: 'Administrador' });
     }
 
-    res.json({ mensaje: `Bienvenido, ${usuario.nombres}`, usuario: usuario.nombres, rol: usuario.rol, ok: true });
+    res.json({ mensaje: `Bienvenido, ${(usuario.nombres || '').toUpperCase()}`, usuario: (usuario.nombres || '').toUpperCase(), rol: usuario.rol, ok: true });
   } catch (error) {
     console.error('❌ ERROR LOGIN:', error);
     res.json({ mensaje: '❌ Error al verificar credenciales' });

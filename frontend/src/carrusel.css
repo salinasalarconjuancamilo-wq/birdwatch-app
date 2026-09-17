@@ -82,13 +82,13 @@
 }
 
 .carrusel-nombre {
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 700;
   margin: 0 0 5px 0;
 }
 
 .carrusel-descripcion {
-  font-size: 14px;
+  font-size: 16px;
   margin: 0;
   opacity: 0.9;
 }

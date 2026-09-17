@@ -57,7 +57,7 @@
 }
 
 .cabecera-logo-texto {
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 700;
   color: #ffffff;
   letter-spacing: 1px;
@@ -74,7 +74,7 @@
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 600;
   transition: all 0.3s ease;
 }
@@ -142,7 +142,7 @@
 
 .subtitulo {
   text-align: center;
-  font-size: 17px;
+  font-size: 18px;
   color: #ffffff;
   margin-bottom: 40px;
 }
@@ -171,14 +171,14 @@
 
 .tarjeta h3 {
   color: #0F6E3C;
-  font-size: 20px;
+  font-size: 22px;
   margin-bottom: 12px;
 }
 
 .tarjeta p {
   color: #444444;
   line-height: 1.6;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 /* ===== COOKIES ===== */
@@ -197,7 +197,7 @@
 .cookies p {
   margin: 0;
   color: #856404;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 /* ===== FORMULARIOS ===== */
@@ -228,6 +228,7 @@ label {
   color: #333333;
   display: block;
   margin-bottom: 8px;
+  font-size: 16px;
 }
 
 .input {
@@ -236,7 +237,7 @@ label {
   margin-bottom: 15px;
   border: 2px solid #e0e0e0;
   border-radius: 8px;
-  font-size: 15px;
+  font-size: 16px;
   transition: border-color 0.3s ease;
 }
 
@@ -271,7 +272,7 @@ label {
   border-radius: 10px;
   padding: 15px;
   margin-bottom: 20px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .texto-ayuda strong {
@@ -288,9 +289,14 @@ label {
 .mensaje {
   text-align: center;
   margin-top: 20px;
-  font-size: 14px;
+  font-size: 16px;
   white-space: pre-line;
   color: #333333;
+  background-color: rgba(255, 255, 255, 0.92);
+  padding: 12px 18px;
+  border-radius: 10px;
+  border: 1px solid #d4edda;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
 }
 
 .enlaces {
@@ -306,7 +312,7 @@ label {
   border: none;
   background: transparent;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 16px;
   text-decoration: underline;
 }
 
@@ -340,7 +346,7 @@ label {
 }
 
 .modulo-card p {
-  font-size: 13px;
+  font-size: 15px;
   color: #666;
   margin-bottom: 15px;
   min-height: 35px;
@@ -374,7 +380,7 @@ label {
 .tabla-usuarios {
   width: 100%;
   border-collapse: collapse;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .tabla-usuarios thead {
@@ -386,7 +392,7 @@ label {
   padding: 12px 15px;
   text-align: left;
   font-weight: 600;
-  font-size: 13px;
+  font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
@@ -407,7 +413,7 @@ label {
 
 @media (max-width: 768px) {
   .tabla-usuarios {
-    font-size: 12px;
+    font-size: 13px;
   }
   .tabla-usuarios th,
   .tabla-usuarios td {
@@ -423,7 +429,7 @@ label {
 .titulo-seccion {
   text-align: center;
   color: #ffffff;
-  font-size: 22px;
+  font-size: 24px;
   margin-bottom: 20px;
   font-weight: 600;
 }
@@ -449,15 +455,15 @@ label {
 }
 
 .usuario-avatar {
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
   background-color: #0F6E3C;
   color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 700;
   flex-shrink: 0;
 }
@@ -470,12 +476,11 @@ label {
 }
 
 .usuario-nombre {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   color: #333;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 /* ===== BANNER INFO PARQUE ===== */
@@ -498,7 +503,7 @@ label {
 
 .parque-info-banner p {
   color: #555;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.6;
   margin-bottom: 15px;
 }
@@ -507,7 +512,7 @@ label {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  font-size: 14px;
+  font-size: 15px;
   color: #666;
 }
 
@@ -518,8 +523,10 @@ label {
 }
 
 .usuario-email {
-  font-size: 12px;
+  font-size: 14px;
   color: #888;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .conteo-roles {
@@ -542,7 +549,7 @@ label {
   text-align: center;
   padding: 20px;
   margin-top: auto;
-  font-size: 14px;
+  font-size: 15px;
   position: relative;
   z-index: 1;
 }
@@ -600,7 +607,7 @@ label {
   background: transparent;
   border: none;
   text-align: left;
-  font-size: 15px;
+  font-size: 16px;
   color: #333;
   cursor: pointer;
   transition: background-color 0.2s ease;
@@ -640,7 +647,7 @@ label {
   display: inline-block;
   padding: 6px 14px;
   border-radius: 20px;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.5px;
   text-transform: uppercase;

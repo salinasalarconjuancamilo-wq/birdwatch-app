@@ -128,7 +128,7 @@ function App() {
         .then(res => res.json())
         .then(datos => {
           if (datos.ok) {
-            setUsuarioNombre(datos.usuario.nombres);
+            setUsuarioNombre((datos.usuario.nombres || '').toUpperCase());
             const rol = datos.usuario.rol || 'Administrador';
             setRolUsuario(rol);
             localStorage.setItem('rolUsuario', rol);
@@ -204,7 +204,7 @@ function App() {
         localStorage.setItem('rolUsuario', rol);
         setRolUsuario(rol);
         setCorreoUsuario(correo);
-        if (d.usuario) setUsuarioNombre(d.usuario);
+        if (d.usuario) setUsuarioNombre(d.usuario.toUpperCase());
         setSubPagina('');
         setPagina('dashboard');
       }
