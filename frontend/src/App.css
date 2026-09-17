@@ -223,6 +223,8 @@
 
 .cookies-botones {
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   gap: 12px;
   flex-shrink: 0;
 }
@@ -642,6 +644,20 @@ label {
     flex-direction: column;
     gap: 15px;
     padding: 15px;
+  }
+  .cabecera-botones {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .cookies {
+    flex-direction: column;
+    text-align: center;
+  }
+  .cookies-botones {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 /* ===== SELECTOR DE ROL DESPLEGABLE ===== */
