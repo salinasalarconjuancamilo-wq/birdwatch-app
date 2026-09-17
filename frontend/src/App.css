@@ -89,24 +89,24 @@
 }
 
 .boton-iniciar {
-  background-color: #264653;
+  background-color: #0F6E3C;
   color: #ffffff;
   border: 1px solid transparent;
 }
 
 .boton-iniciar:hover {
-  background-color: #1d3640;
+  background-color: #0c5a30;
   border-color: #ffffff;
 }
 
 .boton-registrar {
-  background-color: #e9c46a;
-  color: #264653;
+  background-color: #28C76F;
+  color: #ffffff;
   border: 1px solid transparent;
 }
 
 .boton-registrar:hover {
-  background-color: #ddb552;
+  background-color: #20b360;
   border-color: #ffffff;
 }
 
@@ -205,15 +205,15 @@
 
 /* ===== COOKIES ===== */
 .cookies {
-  background-color: rgba(255, 249, 230, 0.98);
+  background-color: rgba(232, 245, 233, 0.98);
   padding: 22px 28px;
   border-radius: 14px;
-  border: 2px solid #FFE58F;
+  border: 2px solid #28C76F;
   display: flex;
   align-items: center;
   gap: 18px;
   flex-wrap: wrap;
-  box-shadow: 0 6px 20px rgba(255, 193, 7, 0.25);
+  box-shadow: 0 6px 20px rgba(15, 110, 60, 0.25);
   margin-top: 30px;
   position: relative;
   z-index: 1;
@@ -226,14 +226,14 @@
 
 .cookies-titulo {
   margin: 0 0 6px 0;
-  color: #856404;
+  color: #0F6E3C;
   font-size: 20px;
   font-weight: 700;
 }
 
 .cookies-texto {
   margin: 0;
-  color: #856404;
+  color: #1a5c36;
   font-size: 16px;
   line-height: 1.6;
 }
@@ -252,6 +252,14 @@
 
 .cookies-botones .boton-rojo:hover {
   background-color: #c82333;
+}
+
+.cookies-botones .boton-verde {
+  background-color: #0F6E3C;
+}
+
+.cookies-botones .boton-verde:hover {
+  background-color: #0c5a30;
 }
 
 /* ===== TERMINOS Y CONDICIONES ===== */
