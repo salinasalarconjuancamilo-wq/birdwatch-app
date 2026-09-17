@@ -112,7 +112,7 @@ function App() {
 
   useEffect(() => {
     const aceptadas = localStorage.getItem('cookiesAceptadas');
-    if (aceptadas === 'SI' || aceptadas === 'NO') setCookiesAceptadas(true);
+    if (aceptadas) setCookiesAceptadas(true);
 
     if (pagina === 'dashboard') {
       const correoGuardado = localStorage.getItem('correoUsuario');
@@ -567,8 +567,8 @@ function App() {
                   </p>
                 </div>
                 <div className="cookies-botones">
-                  <button className="boton boton-rojo" onClick={rechazarCookies}>Rechazar</button>
-                  <button className="boton boton-verde" onClick={aceptarCookies}>Aceptar</button>
+                  <button type="button" className="boton boton-rojo" onClick={rechazarCookies}>Rechazar</button>
+                  <button type="button" className="boton boton-verde" onClick={aceptarCookies}>Aceptar</button>
                 </div>
               </div>
             )}
