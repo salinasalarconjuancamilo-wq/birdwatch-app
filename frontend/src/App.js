@@ -976,7 +976,7 @@ function App() {
             <Logo />
             <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
               <span className="badge-rol badge-admin">Administrador</span>
-              <button className="boton boton-blanco" onClick={volverAlDashboard}>Dashboard</button>
+              <button className="boton boton-blanco" onClick={volverAlDashboard}>Inicio</button>
               <button className="boton boton-rojo" onClick={cerrarSesion}>Salir</button>
             </div>
           </header>
@@ -1060,7 +1060,7 @@ function App() {
             <Logo />
             <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
               <span className="badge-rol badge-admin">Administrador</span>
-              <button className="boton boton-blanco" onClick={() => { volverAlDashboard(); limpiarFormularioParque(); }}>Dashboard</button>
+              <button className="boton boton-blanco" onClick={() => { volverAlDashboard(); limpiarFormularioParque(); }}>Inicio</button>
               <button className="boton boton-rojo" onClick={cerrarSesion}>Salir</button>
             </div>
           </header>
@@ -1098,7 +1098,7 @@ function App() {
             <Logo />
             <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
               <span className={`badge-rol ${badgeClass}`}>{rolUsuario === 'Administrador de Parque' ? 'Admin de Parque' : rolUsuario}</span>
-              <button className="boton boton-blanco" onClick={volverAlDashboard}>Dashboard</button>
+              <button className="boton boton-blanco" onClick={volverAlDashboard}>Inicio</button>
               <button className="boton boton-rojo" onClick={cerrarSesion}>Salir</button>
             </div>
           </header>
@@ -1202,7 +1202,7 @@ function App() {
             <Logo />
             <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
               <span className={`badge-rol ${badgeClass}`}>{rolUsuario === 'Administrador de Parque' ? 'Admin de Parque' : rolUsuario}</span>
-              <button className="boton boton-blanco" onClick={volverAlDashboard}>Dashboard</button>
+              <button className="boton boton-blanco" onClick={volverAlDashboard}>Inicio</button>
               <button className="boton boton-rojo" onClick={cerrarSesion}>Salir</button>
             </div>
           </header>
@@ -1258,7 +1258,7 @@ function App() {
             <Logo />
             <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
               <span className={`badge-rol ${badgeClass}`}>{rolUsuario === 'Administrador de Parque' ? 'Admin de Parque' : rolUsuario}</span>
-              <button className="boton boton-blanco" onClick={volverAlDashboard}>Dashboard</button>
+              <button className="boton boton-blanco" onClick={volverAlDashboard}>Inicio</button>
               <button className="boton boton-rojo" onClick={cerrarSesion}>Salir</button>
             </div>
           </header>
