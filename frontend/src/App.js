@@ -293,16 +293,6 @@ function App() {
       .then(datos => { if (datos.ok) setListaParques(datos.parques); });
   };
 
-  const cargarMiParque = () => {
-    fetch('http://localhost:5001/api/parques/obtener-por-admin', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ correo: correoUsuario })
-    })
-    .then(res => res.json())
-    .then(datos => { if (datos.ok) setMiParque(datos.parque); });
-  };
-
   const limpiarFormularioParque = () => {
     setParqueNombre(''); setParqueDescripcion(''); setParqueDireccion('');
     setParqueHorario(''); setParqueTelefono(''); setParqueEmail('');

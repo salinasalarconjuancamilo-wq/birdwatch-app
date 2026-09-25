@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import express from 'express';
 import cors from 'cors';
 import { initializeApp } from 'firebase/app';
@@ -9,12 +10,12 @@ import crypto from 'crypto';
 // 🔧 FIREBASE
 // ==============================================
 const firebaseConfig = {
-  apiKey: "AIzaSyDum5ddNOSlYfwSRe7M7j7R_7Q46_ACEno",
-  authDomain: "birdwatch-30879.firebaseapp.com",
-  projectId: "birdwatch-30879",
-  storageBucket: "birdwatch-30879.firebasestorage.app",
-  messagingSenderId: "302352933411",
-  appId: "1:302352933411:web:6bc2baccd6f1e4e0be4796"
+  apiKey: process.env.FIREBASE_API_KEY,
+  authDomain: process.env.FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.FIREBASE_PROJECT_ID,
+  storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.FIREBASE_APP_ID
 };
 
 const appFirebase = initializeApp(firebaseConfig);
@@ -23,8 +24,8 @@ const db = getFirestore(appFirebase);
 // ==============================================
 // 📧 CORREO
 // ==============================================
-const CORREO_REMITE = "salinasalarconjuancamilo@gmail.com";
-const CONTRASEÑA_CORREO = "nmojmsppzifsjuar";
+const CORREO_REMITE = process.env.CORREO_REMITE;
+const CONTRASEÑA_CORREO = process.env.CONTRASEÑA_CORREO;
 
 const transportador = nodemailer.createTransport({
   service: 'gmail',
